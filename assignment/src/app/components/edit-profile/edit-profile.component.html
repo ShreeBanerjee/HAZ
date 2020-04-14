@@ -1,0 +1,203 @@
+<!-- // EDIT/SETTINGS SCREEN // -------------------->
+<div id="haz_scr06" class="haz_panel container p-0">
+    <!-- Guest header -------------->
+    <header class="haz_guest_header haz_guest_section d-flex mb-1">
+        <div class="container-fluid">
+            <div class="d-flex bd-highlight">
+                <div class="haz_back pr-3 flex-shrink-1 bd-highlight align-self-center" (click)="navigateTo('home')">
+                    <i class="haz_ui_link fas fa-chevron-left"></i>
+                </div>
+                <div class="w-100 bd-highlight haz_guest align-self-center">
+                    <h1>Edit customer<small>Mr {{guestName}}</small></h1>
+                </div>
+                <div class="flex-shrink-1 bd-highlight align-self-center pr-2">
+                    <div class="haz_pct">
+                        <div class="haz_circle">
+                            <span>{{guestInitials}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /End Guest header -------------->
+
+
+    <form [formGroup] ="guestForm">
+        <!-- Edit bloc -------------->
+        <div class="haz_edit container">
+
+            <!-- general infos Field set-->
+            <fieldset class="mb-4">
+                <legend class="mb-3">General informations</legend>
+                <!-- Name -->
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="haz_fx_prepend input-group-text">Name</span>
+                    </div>
+                    <input type="text" class="form-control" [formControlName]="'name'" (change)="storedata()" placeholder="Name" aria-label="Name">
+                </div>
+                <!-- FirstName -->
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="haz_fx_prepend input-group-text">Firstname</span>
+                    </div>
+                    <input type="text" class="form-control" [formControlName]="'firstName'" (change)="storedata()" placeholder="FirstName" aria-label="FirstName">
+                </div>
+                <!-- Email -->
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="haz_fx_prepend input-group-text">Main Email</span>
+                    </div>
+                    <input type="text" class="form-control" [formControlName]="'email'"  (change)="storedata()" placeholder="Email" aria-label="Email">
+                </div>
+                <!-- Phone -->
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="haz_fx_prepend input-group-text">Main Phone</span>
+                    </div>
+                    <input type="text" class="form-control" [formControlName]="'phone'"  (change)="storedata()" placeholder="Phone" aria-label="Phone">
+                </div>
+
+                <div class="haz_fs_helper">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisl tortor, sit amet
+                        vulputate risus ultricies id. Aenean consectetur, elit sed tincidunt iaculis.</p>
+                </div>
+
+
+            </fieldset>
+            <!-- /end general infos Field set-->
+
+
+            <!-- Segmentation set-->
+            <fieldset class="mb-4">
+                <legend class="mb-3">Segmentation</legend>
+                <!-- Language -->
+                <div class="input-group mb-2">
+
+                    <div class="container p-0">
+                        <div class="d-flex bd-highlight">
+                            <div class="p-1 haz_tag_item">
+                                <span>VIP</span>
+                            </div>
+                            <div class="p-1 haz_tag_item">
+                                <span>Leisure</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="haz_fs_helper">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisl tortor, sit amet
+                            vulputate risus ultricies id. Aenean consectetur, elit sed tincidunt iaculis.</p>
+                    </div>
+
+                </div>
+
+
+            </fieldset>
+            <!-- /end Segmentation Fieldset-->
+
+
+            <!-- Address Field set-->
+            <fieldset class="mb-4">
+                <legend class="mb-3">Address</legend>
+                <!-- Street -->
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="haz_fx_prepend input-group-text">Street</span>
+                    </div>
+                    <input type="text" class="form-control" [formControlName]="'street1'" (change)="storedata()" placeholder="Street" aria-label="Street">
+                </div>
+                <!-- Street 2 -->
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="haz_fx_prepend input-group-text">Street 2</span>
+                    </div>
+                    <input type="text" class="form-control" [formControlName]="'street2'" (change)="storedata()" placeholder="Street2" aria-label="Street2">
+                </div>
+                <!-- Zip -->
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="haz_fx_prepend input-group-text">Zip Code</span>
+                    </div>
+                    <input type="text" class="form-control" [formControlName]="'postalCode'" (change)="storedata()" placeholder="Zip" aria-label="Zip">
+                </div>
+                <!-- City -->
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="haz_fx_prepend input-group-text">City</span>
+                    </div>
+                    <input type="text" class="form-control"  [formControlName]="'city'" (change)="storedata()" placeholder="City" aria-label="City">
+                </div>
+                <!-- Country -->
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="haz_fx_prepend input-group-text">Country</span>
+                    </div>
+                    <input type="text" class="form-control"  [formControlName]="'country'" (change)="storedata()" placeholder="City" placeholder="Country" aria-label="Country">
+                </div>
+
+                <div class="haz_fs_helper">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisl tortor, sit amet
+                        vulputate risus ultricies id. Aenean consectetur, elit sed tincidunt iaculis.</p>
+                </div>
+
+            </fieldset>
+            <!-- /end Address Field set-->
+
+
+
+            <!-- More set-->
+            <fieldset class="mb-4">
+                <legend class="mb-3">Additional informations</legend>
+                <!-- Language -->
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="haz_fx_prepend input-group-text">Language</span>
+                    </div>
+                    <input type="text" class="form-control" [formControlName]="'language'" (change)="storedata()" placeholder="Language" aria-label="Language">
+                </div>
+                <!-- Gender -->
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="haz_fx_prepend input-group-text">Gender</span>
+                    </div>
+                    <input type="text" class="form-control" [formControlName]="'gender'" (change)="storedata()" placeholder="Gender" aria-label="Gender">
+                </div>
+                <!-- Birthday -->
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="haz_fx_prepend input-group-text">Birthday</span>
+                    </div>
+                    <input type="text" class="form-control" [formControlName]="'birthday'" (change)="storedata()" placeholder="Birthday" aria-label="Birthday">
+                </div>
+                <!-- Job -->
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="haz_fx_prepend input-group-text">Job title</span>
+                    </div>
+                    <input type="text" class="form-control" [formControlName]="'jobTitle'" (change)="storedata()" placeholder="Job" aria-label="Job">
+                </div>
+
+                <div class="haz_fs_helper">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisl tortor, sit amet
+                        vulputate risus ultricies id. Aenean consectetur, elit sed tincidunt iaculis.</p>
+                </div>
+
+            </fieldset>
+            <!-- /end More Fieldset-->
+
+
+
+        </div>
+        <!-- /Edit bloc -------------->
+    </form>
+
+
+
+
+
+
+
+</div>
+<!-- // /END LOYALTY SCREEN // -------------------->

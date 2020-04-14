@@ -1,0 +1,635 @@
+
+
+/* ==========================================================================
+   HAZ Custom Stylz
+   ========================================================================== */
+
+/* --------------------------------------------- */
+/* NavBar
+/* --------------------------------------------- */
+
+#haz_main_nav {
+    height: 80px;
+    border-bottom: 1px solid #444!important;
+}
+
+#hazv2.dark,
+.bg-dark{
+    background-color: #232b3b!important; /* -- CBG --*/
+    color: #FFF;
+}
+
+.navbar-dark .navbar-toggler {
+    border: none;
+}
+
+#haz_main_nav legend {
+    position: absolute;
+    top: 5px;
+    left: 60px;
+    font-size: 9px;
+    
+}
+
+#hazv2 .navbar {
+    border: none;
+    padding: .5rem 0rem!important;
+}
+
+#hazv2 .navbar #haz_spotlight {
+    position: absolute;
+    top: 14px;
+    left: 60px;
+    right: 10px;
+    margin-bottom: .5rem!important;
+    margin-top: .5rem!important;
+}
+#hazv2 .navbar #haz_spotlight input {
+    width: 100%;
+    background: transparent;
+    color: #666!important;
+    border: 0;
+}
+#hazv2 .navbar #haz_spotlight i {
+    position: absolute;
+    top: 12px;
+    right: 23px;
+    z-index: 10;
+}
+
+
+@media (min-width: 768px) {
+    #hazv2 .navbar-expand-md .navbar-toggler {
+        display: block!important;
+    }
+}
+
+
+/* --------------------------------------------- */
+/* Footer
+/* --------------------------------------------- */
+
+.haz_footer {
+    background-color: #232b3b; /* -- CBG --*/
+    border-top:1px solid #444!important;
+}
+
+.haz_ft_1 i {
+    font-size: 2em;
+}
+.haz_ft_1 span {
+    color: #74829d;
+    font-weight: bold;
+    font-size: 0.65em;
+    margin-left: 6px;
+    letter-spacing: 0;
+}
+
+.haz_ft_2 {
+    font-size: 0.6em;
+    color: #74829d;
+}
+
+.haz_ft_3 {
+    position: absolute;
+    top: 30%;
+    right: 20px;
+}
+.haz_ft_3 i {
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #999;
+}
+
+
+/* --------------------------------------------- */
+/* haz_panel/ MainMenu
+/* --------------------------------------------- */
+
+#haz_main_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #232b3b;
+    z-index: 10000;
+}
+
+.haz_panel_close {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    text-align: center;
+}
+.haz_panel_close i {
+    font-size: 1.6em;
+}
+
+.haz_guest_menu {
+    background-color: transparent;
+    background: transparent
+}
+
+.haz_guest_menu .list-group-item {
+    background-color: transparent;
+    background: transparent
+}
+
+.haz_guest_menu .list-group-item a {
+    font-size: 1.3em;
+    color: #fff;
+}
+
+
+/* --------------------------------------------- */
+/* haz_panel/ MainMenu
+/* --------------------------------------------- */
+
+#haz_search_results {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #232b3b;
+    z-index: 10000;
+}
+
+
+
+
+/* --------------------------------------------- */
+/* Constants
+/* --------------------------------------------- */
+
+
+
+.haz_ui_link {
+    color: #666;
+    cursor: pointer;
+}
+.haz_ui_link:hover {
+    color: #FFF;
+}
+
+.haz_bt_line {
+    width: 100%;
+    margin: 8px 0;
+    border-top: 1px dotted #666; /* -- C1 --*/
+}
+
+.haz_bp_30 {
+    margin-bottom: 30px;
+}
+
+.haz_btn_1 {
+    background-color: transparent;
+    border-color: transparent;        
+    padding: .005rem .5rem;
+    color: #74829d;  /* -- C5 --*/
+    font-size: 13px;
+}
+
+.haz_btn_green {
+    background-color:#26b4b2; /* -- C6 --*/
+    border: 1px solid #26b4b2;
+    color: #FFF;
+}
+
+.haz_hr {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;    
+}
+
+
+/* --- lists ----*/
+.haz_card-list-item:hover {
+   background-color:#74829d;  /* -- C5 --*/
+}
+.haz_card-list-item:hover a,
+.haz_card-list-item:hover p,
+.haz_card-list-item:hover h3,
+.haz_card-list-item:hover h4 {
+   color: #fff!important;    
+}
+.haz_even {
+    background-color: #141a28;/*-- C9 --*/
+}
+.haz_odd {
+    background-color:transparent;
+}
+
+/* --- tabs ----*/
+
+.haz_tabs {
+    font-size: 80%;
+}
+
+.haz_tabs.nav-pills .nav-link.active, 
+.haz_tabs.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #74829d!important; /* -- C5 --*/
+}
+
+
+
+
+/* --------------------------------------------- */
+/* Guest header 
+/* --------------------------------------------- */
+
+.haz_guest_header {
+
+}
+
+.haz_guest {
+    float: left;
+    padding: 10px 0;    
+}
+
+.haz_pct {
+    
+}
+
+.haz_circle {
+    border-radius: 100%;
+    background: #666;
+    border: 2px solid #fff;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+.haz_circle span {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 9px;
+    font-weight: lighter;
+    font-size: 1.2em;
+}
+.haz_card-list-item .haz_circle {
+    width: 35px;
+    height: 35px;
+    margin: 8px 0;    
+}
+.haz_card-list-item .haz_circle span{
+    font-size: 0.7em;
+    color: #FFF;
+    padding: 6px 0;
+}
+
+
+.haz_guest h1 {
+    font-size: 1.4em;
+    float: left;
+    width: 100%;
+}
+.haz_guest h1 small{
+    font-size: 0.6em;
+    float: left;
+    width: 100%;
+    color: #999;  /* -- C2 --*/
+}
+
+.haz_guest_section .haz_circle {
+    width: 35px;
+    height: 35px;
+}
+.haz_guest_section .haz_circle span {
+    font-size: 0.9em;
+    padding: 5px;
+}
+.haz_guest_section .haz_guest h1 {
+    font-size: 1.2em;
+    padding: 5px;
+}
+.haz_back i {
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+
+/* --------------------------------------------- */
+/* Guest Tags 
+/* --------------------------------------------- */
+
+.haz_guest_tags {
+    font-size: 85%;
+}
+
+.haz_tag_item{
+   border-radius: 2em;
+    background: #3c4b60; /* --- C0 --*/
+    margin-right: 5px;
+}
+
+.haz_tag_item span{
+    padding: 0 10px;
+    font-size: 0.8em;
+    color: #b1b1b1; /*-- C4 --*/
+}
+
+
+/* --------------------------------------------- */
+/* Guest Infos 
+/* --------------------------------------------- */
+
+.haz_guest_infos {
+    font-size: 85%;
+}
+
+
+/* --------------------------------------------- */
+/* Guest Infos 
+/* --------------------------------------------- */
+
+.haz_guest_notes {
+    font-size: 90%;
+}
+
+.haz_guest_notes p {
+    font-size: 0.9em;
+    color: #999 /* -- C2 --*/
+}
+.haz_guest_notes p small {
+text-decoration: underline;
+}
+
+
+
+/* --------------------------------------------- */
+/* Grid
+/* --------------------------------------------- */
+
+.haz_grid_toolbar {
+    color: #74829d; /* -- C5 --*/
+    font-size: 0.8em;
+}
+
+
+.haz_grid_item_title {
+  font-size: 0.9em;
+}
+
+.haz_grid_item_title small {
+   float: left;
+    width: 100%;
+    color: #999;  /* -- C2 --*/
+    font-size: 0.7em;
+}
+
+ul.haz_timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.haz_timeline:before {
+    content: ' ';
+    background: #74829d; /* -- C5 --*/
+    display: inline-block;
+    position: absolute;
+    left: 19px;
+    width: 2px;
+    height: 85%;
+    z-index: 400;
+    margin-top: 20px;
+}
+ul.haz_timeline > li {
+    position: relative;
+    margin: 5px 0 15px 0;
+    padding: 0 0 14px 10px;
+    line-height: 1.1em;  
+    border-bottom: 1px dotted #74829d; /* -- C5 --*/
+}
+ul.haz_timeline > li:before {
+    content: ' ';
+    background: #232b3b;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #74829d; /* -- C5 --*/
+    left: -30px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+    margin-top: 3px;
+}
+
+ul.haz_timeline a {
+    color: #74829d; /* -- C5 --*/
+}
+ul.haz_timeline small {
+    color: #999; /* -- C5 --*/
+    font-size: 0.7em;
+}
+ul.haz_timeline span {
+    font-size: 1.3em;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #74829d; /* -- C5 --*/
+}
+
+ul.haz_timeline > li.haz_tm_first:before,
+ul.haz_timeline > li.haz_tm_last:before{
+    width: 30px;
+    height: 30px; 
+    left: -35px;
+}
+
+ul.haz_timeline > li.haz_tm_last{
+    border-bottom: none; /* -- C5 --*/
+}
+
+
+/* --------------------------------------------- */
+/* Message window
+/* --------------------------------------------- */
+
+.haz_msg_wd {
+    background-color: #FFF;
+    color: #333; /* -- C6 --*/
+}
+.haz_msg_wd label {
+    font-size: 0.8em;
+}
+.haz_msg_wd .btn-group,
+.haz_msg_wd .btn-group button,
+.haz_msg_wd input,
+.haz_msg_wd textarea{
+    width: 100%;
+}
+.haz_msg_wd .btn-group button {
+    background-color: #e2e8f6;
+    border: 1px solid #e2e8f6;
+    color: #74829d!important; /* -- C7 --*/
+}
+
+.haz_msg_wd textarea{
+    border: 1px solid #cecece;
+    height: 230px;
+    padding: 10px;
+}
+.haz_msg_wd input,
+.haz_msg_wd textarea{
+   font-size: 0.8em; 
+}
+.haz_msg_wd .btn-group button {
+    text-align: left;
+}
+
+.haz_msg_tb i {
+    font-size: 0.7em;
+    color: #999;
+}
+
+
+/* --------------------------------------------- */
+/* Booking window
+/* --------------------------------------------- */
+
+
+.haz_card {
+    position: relative; 
+    background-color: transparent;
+    color: #4f5256; /*-- C8 --*/
+    border: none;
+    background:transparent;
+}
+
+.haz_card-list {
+    list-style-type: none; 
+    margin: 0;padding: 0;
+}
+
+.haz_card-list>.haz_card-list-item {
+    padding: 0 22px;
+    cursor: pointer!important;
+}
+
+
+.haz_card-list-item i  {
+    float: left;
+    font-size:28px;
+    width: 38px;
+    height: 38px;
+    margin: 5px auto 8px auto;
+}
+.haz_border-b-1 {
+    border-bottom: #cecece;
+}
+
+.haz_card-list-item-text h3{
+    margin: 15px 0 0 0;
+    padding: 0;
+}
+
+.haz_card-list-item-text h3 a {
+    font-size: 16px!important;
+    color: #74829d;/* -- C11 --*/
+}
+.haz_card-list-item-text h4 {
+    font-size: 12px!important;
+    color: #FFF;/* -- C11 --*/
+    font-weight: lighter;
+    text-transform: uppercase;
+    padding: 0;
+    margin-bottom: 5px;
+}
+.haz_card-list-item-text p {
+    margin-bottom: 30px;
+}
+
+/* --------------------------------------------- */
+/* Loyalty & promotions
+/* --------------------------------------------- */
+
+.haz_lt_gfx{
+    height: 180px;
+}
+
+.haz_lt_gfx img{
+    width: auto;
+    height: 100%;
+    margin: auto;
+}
+
+.haz_lt_points div {
+    padding: 10px 30px 10px 30px;
+    width: 49%;
+}
+.haz_lt_points div.fst {
+    border-right: 1px solid #fff; /* -- C11 --*/
+}
+.haz_lt_points h1,
+.haz_lt_points h5,
+.haz_lt_points small{
+    color: #FFF;/* -- C11 --*/
+}
+
+.haz_lt_points h1 {
+    font-size: 2em;
+}
+.haz_lt_points h5 {
+    font-size: 0.8em;
+}
+
+
+.haz_lt_cta div a {
+    color: #fff;/* -- C11 --*/
+    font-size: 14px;
+}
+.haz_lt_cta .btn {
+    width: 130px;
+}
+.haz_lt_cta small {
+    font-size: 0.6em;
+}
+
+
+
+/* --------------------------------------------- */
+/* Edit & Settings
+/* --------------------------------------------- */
+
+.haz_edit {
+    
+}
+.haz_fx_prepend {
+    width: 110px;
+}
+
+.haz_fs_helper p {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #999;
+}
+
+.haz_edit fieldset {
+    font-size: 80%;
+}
+.haz_edit fieldset legend {
+    font-size:1em;
+    color: #74829d;
+    text-transform: uppercase;
+}
+
+
+.haz_edit .input-group-text {
+    background-color: #74829d;
+    color: #FFF;
+    font-size: 1em;
+}
+.haz_edit input {
+    background-color: transparent;
+    color: #FFF;
+    font-size: 1em;    
+}
+
+
+
+

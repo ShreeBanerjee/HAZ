@@ -1,0 +1,62 @@
+<!-- // LOYALTY SCREEN // -------------------->
+<div id="haz_scr05" class="haz_panel container p-0">
+    <!-- Guest header -------------->        
+    <header class="haz_guest_header haz_guest_section d-flex mb-1">
+          <div class="container-fluid">
+                <div class="d-flex bd-highlight">  
+                    <div class="haz_back pr-3 flex-shrink-1 bd-highlight align-self-center" (click)="navigateTo('home')">                        
+                        <i class="haz_ui_link fas fa-chevron-left"></i>                     
+                    </div>
+                    <div class="w-100 bd-highlight haz_guest align-self-center">
+                         <h1>Loyalty &amp; promotions<small>Mr {{guestName}}</small></h1>
+                    </div> 
+                    <div class="flex-shrink-1 bd-highlight align-self-center pr-2">                        
+                        <div class="haz_pct">
+                            <div class="haz_circle">
+                                <span>{{guestInitials}}</span>  
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+          </div>  
+    </header>        
+    <!-- /End Guest header --------------> 
+    
+    <!-- Gfx bloc --------------> 
+    <div class="haz_lt_gfx container text-center p-3">
+        <img src="assets/img/haz_loyalty.svg" alt=""/>
+    </div>
+    <!-- /Gfx bloc --------------> 
+    
+    <!-- Credentials bloc --------------> 
+    <div class="haz_lt_points container text-center mb-3">
+        <div class="fst d-inline-block text-right">
+            <h1>{{customer.statusPoints}}</h1>
+            <h5>Pts status</h5>
+        </div>
+        <div class="d-inline-block text-left">
+            <h1>{{customer.expendablePoints}}</h1>
+            <h5>Pts fidelity</h5>
+        </div>              
+    </div>
+    <!-- /Credentials bloc --------------> 
+    
+    <!-- CTA bloc --------------> 
+    <div class="haz_lt_cta container text-center">                
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn haz_btn_green btn-lg">Offer</button>
+            <button type="button" class="btn btn-secondary btn-lg">Redeem</button>
+        </div>
+        <div class="d-block text-center mt-1">
+            <small>Loyalty ID: CB-E8EA222C</small>
+        </div>                  
+    </div>
+    <!-- /CTA bloc --------------> 
+    
+
+
+    
+    
+    
+</div>    
+<!-- // /END LOYALTY SCREEN // -------------------->

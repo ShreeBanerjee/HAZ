@@ -1,0 +1,62 @@
+{
+  "modules": {
+    "HOME": "home",
+    "SUMMARY": "summary",
+    "BOOKINGS": "bookings",
+    "COMMUNICATION": "communication",
+    "LOYALTY": "loyalty",
+    "EDIT_PROFILE": "edit-profile",
+    "MESSAGE": "message",
+    "SEARCH": "search"
+  },
+  "routes": {
+    "HOME": "home",
+    "SUMMARY": "summary",
+    "BOOKINGS": "bookings",
+    "COMMUNICATION": "communication",
+    "LOYALTY": "loyalty",
+    "EDIT_PROFILE": "edit-profile",
+    "MESSAGE": "message",
+    "SEARCH": "search"
+  },
+  "errors": {
+    "MODULE_NOT_FOUND": "ERROR: module_not_found",
+    "INVALID_RESPONSE": "ERROR: invalid_response",
+    "INVALID_FILE": "ERROR: invalid_file",
+    "API_NOT_FOUND": "ERROR: api_not_found",
+    "FUNCTION_CALL_FAILED": "ERROR: fn_call_failed",
+    "ERROR_OCCURED": "ERROR: error_occured",
+    "MIN_DATE_VALIDATOR_FAILED": "ERROR: min_date_validator_failed",
+    "MAX_DATE_VALIDATOR_FAILED": "ERROR: max_date_validator_failed",
+    "MAX_CURR_DATE_VALIDATOR_FAILED": "ERROR: max_curr_date_validator_failed",
+    "MIN_CURR_DATE_VALIDATOR_FAILED": "ERROR: min_curr_date_validator_failed",
+    "FILE_UPLOAD_FAILED": "ERROR: file_upload_failed",
+    "DATETIME_VALIDATOR_FAILED": "ERROR: datetime_validator_failed",
+    "BASEFORM_INIT_FAILED": "ERROR: baseform_init_failed",
+    "DEP_INJECTION_FAILED": "ERROR: dependency_injection_failed",
+    "ROUTE_NEXT_FAILED": "ERROR: route_next_failed",
+    "ROUTE_PREV_FAILED": "ERROR: route_prev_failed",
+    "BASE_FORM_INIT_FAILED": "ERROR: base_form_init_failed",
+    "TRANSLATION_INIT_FAILED": "ERROR: translation_init_failed",
+    "API_CALL_FAILED": "Error: api_call_failed",
+    "PAGE_SCHEMA_LOAD_FAILED": "Error: page_schema_load_failed",
+    "INVALID_URL": "Errors: invalid_url",
+    "FORM_INIT_FAILED": "Errors: form_group_init_failed",
+    "EVENT_REGISTRATION_FAILED": "Error: event_reg_failed",
+    "INVALID_REGISTRATION_RESPONSE": "Error: invalid_user_reg_response",
+    "CHILD_ACTIVATION_FAILED": "Error: child_activation_end_failed",
+    "FORM_DATA_LOAD_FAILED": "Error: form_data_load_failed",
+    "TEXT_VAL_CHANGE_EVENT_REG_FAILED": "Error: text_val_change_evnt_reg_failed",
+    "ONCLICK_EVENT_FAILED": "Error: onclick_event_failed"
+  },
+  "urls": {},
+  "fileName": {
+    "guestList": "guestList",
+    "Customer": "customer",
+    "Bookings": "bookings",
+    "Logs": "logs"
+  },
+  "status": {
+    "CANCELLED": "Cancelled"
+  }
+}

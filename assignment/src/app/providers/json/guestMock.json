@@ -1,0 +1,131 @@
+{
+   "customer":{
+      "globalId":"fc5603ea-456d-4cf8-9a49-09a90f1a7272",
+      "name":"John Doe",
+      "firstName":"John",
+      "lastName":"Doe",
+      "email":"john.doe@gmail.com",
+      "phone":"+351123456789",
+      "country":"IT",
+      "language":"it",
+      "origin":"The Charleston",
+      "type":"Individual",
+      "isArchived":false,
+      "accountId":"4306994a-641f-4006-9787-a0bd9d382ab6",
+      "expendablePoints":0,
+      "statusPoints":549,
+      "hasUnsubscribed":false,
+      "invalidEmail":false,
+      "invalidPhone":false,
+      "isMerged":false,
+      "loyaltyStatus":{
+         "accountId":"4306994a-641f-4006-9787-a0bd9d382ab6",
+         "loyaltyProgramId":"80131ef9-d4fa-4a0b-9cec-74b82cdbd462",
+         "globalId":"64488939-28f4-404a-8249-5f1843890a91",
+         "name":"Silver",
+         "points":400
+      },
+      "lastStayPoints":549,
+      "lastBurnedPoints":0,
+      "loyaltyNumber":"CHB-FC5603EA",
+      "birthdayHasYear":false,
+      "title":"Mister",
+      "genderType":"Male",
+      "addresses":[
+         {
+            "street":"Via po 26 ",
+            "postalCode":"",
+            "city":"Torino",
+            "countryCode":"IT",
+            "globalId":"963aa10b-b1fb-41b5-a379-047e3aabe163"
+         }
+      ],
+      "communicationLogs":[
+         {
+            "id":"MTk6MTA2ODczNDpUV01sa0pFV1RKNlBVY3FtLVJMcDV3",
+            "subject":"Enjoy our Privileged Sale!",
+            "from":"newsletter@cie-ult.com",
+            "to":[
+               "john.doe@gmail.com"
+            ],
+            "sentDate":"2020-03-12T03:57:16.259455",
+            "messageType":"Email",
+            "origin":"Campaign",
+            "originId":"b9932686-e34c-4e9e-9ae0-23cb30b2bcc6",
+            "status":"Processed",
+            "templateGlobalId":"2841a921-3206-4af9-91d8-220395cbc10a"
+         },
+         {
+            "id":"MTk6MTA2ODczNDpxT1cwa3VuSlJNYTB0ekg0Z3BkaUNn",
+            "subject":"We think about you",
+            "from":"newsletter@cie-ult.com",
+            "to":[
+               "john.doe@gmail.com"
+            ],
+            "sentDate":"2020-01-08T13:40:55.0766517",
+            "messageType":"Email",
+            "origin":"Campaign",
+            "originId":"3dcc5b23-d594-45c8-abc6-360bfea3f367",
+            "status":"Processed",
+            "templateGlobalId":"d381de87-d060-41e0-b21e-9127a28a0c65"
+         }
+      ],
+      "tags":[
+         {
+            "globalId":"8f1f4ac2-f228-4ebf-a6bc-5beba63bf755",
+            "name":"VIP"
+         },
+         {
+            "globalId":"db1faeed-e0ad-41b0-bf26-0ff1e542a087",
+            "name":"Leisure"
+         }
+      ],
+      "bookings":[
+         {
+            "globalId":"cbb53d7c-775b-4e38-b81e-6a0a1a0d8b4f",
+            "reference":"BOIKYOCA-1",
+            "hotel":{
+               "name":"The Amazing Hotel",
+               "globalId":"f3e61065-d62a-4c51-bdc9-4c5179fa3635"
+            },
+            "status":"Confirmed",
+            "arrivalDate":"2020-11-12",
+            "departureDate":"2020-11-14"
+         },
+         {
+            "globalId":"58c06470-2bc9-4def-be6b-6281bf75e580",
+            "reference":"BREUUYOCA-1",
+            "hotel":{
+               "name":"The Amazing Hotel",
+               "globalId":"f3e61065-d62a-4c51-bdc9-4c5179fa3635"
+            },
+            "status":"Confirmed",
+            "arrivalDate":"2020-10-10",
+            "departureDate":"2020-10-12"
+         },
+         {
+            "globalId":"f567bf6a-794d-4417-97bc-3478cce3d024",
+            "reference":"BOIKYOCA-2",
+            "hotel":{
+               "name":"The Amazing Hotel",
+               "globalId":"f3e61065-d62a-4c51-bdc9-4c5179fa3635"
+            },
+            "status":"Pending",
+            "arrivalDate":"2020-07-10",
+            "departureDate":"2020-07-17"
+         }
+      ],
+      "notes":[
+         {
+            "globalId":"c469ecd9-a422-471d-892f-460c19d49826",
+            "value":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+            "date":"2020-04-10"
+         },
+         {
+            "globalId":"d58ec0b7-62b2-463d-97a9-7290ed975c89",
+            "value":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+            "date":"2020-02-10"
+         }
+      ]
+   }
+}

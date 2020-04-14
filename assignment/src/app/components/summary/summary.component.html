@@ -1,0 +1,52 @@
+<!-- // MAIN MENU// -------------------->     
+<div id="haz_main_menu" class="haz_panel_overlay">
+    <!-- Guest header -------------->        
+    <header class="haz_guest_header d-flex">
+          <div class="container-fluid p-0">
+                <div class="d-flex bd-highlight p-4">
+                    <div class="p-1 flex-shrink-1 bd-highlight">                        
+                        <div class="haz_pct">
+                            <div class="haz_circle">
+                                <span>JD</span>  
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="p-2 w-100 bd-highlight haz_guest align-self-center">
+                         <h1>Mr John Doe<small>Company name</small></h1>
+                    </div>        
+                </div>
+          </div>  
+    </header>        
+    <!-- /End Guest header -------------->
+    
+    
+    <!-- Menu -------------->  
+    <div class="haz_guest_menu container-fluid">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <a (click)="navigateTo('home')">Summary</a>
+            </li>
+            <li class="list-group-item">
+                <a (click)="navigateTo('bookings')">Bookings</a>
+            </li>
+            <li class="list-group-item">
+                <a (click)="navigateTo('communication')">Communication log</a>
+            </li>
+            <li class="list-group-item">
+                <a (click)="navigateTo('loyalty')">Loyalty &amp; promotions</a>
+            </li>
+            <li class="list-group-item">
+                <a (click)="navigateTo('edit-profile')">Edit profile</a>
+            </li>
+        </ul>
+    </div>    
+    <!-- /End Menu -------------->  
+    
+    <!-- Close -------------->  
+    <div class="haz_panel_close container-fluid p-3" (click)="navigateTo('home')">
+         <i class="haz_ui_link fas fa-times"></i>
+    </div>
+    <!-- /end Close -------------->  
+    
+</div>  
+<!-- // MAIN MENU// -------------------->      

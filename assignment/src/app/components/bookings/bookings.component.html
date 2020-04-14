@@ -1,0 +1,115 @@
+<!-- // BOOKING SCREEN // -------------------->
+<div id="haz_scr04" class="haz_panel container p-0">
+  <!-- Guest header -------------->
+  <header class="haz_guest_header haz_guest_section d-flex mb-1">
+    <div class="container-fluid">
+      <div class="d-flex bd-highlight">
+        <div class="haz_back pr-3 flex-shrink-1 bd-highlight align-self-center" (click)="navigateTo('home')">
+          <i class="haz_ui_link fas fa-chevron-left"></i>
+        </div>
+        <div class="w-100 bd-highlight haz_guest align-self-center">
+          <h1>Bookings<small>Mr {{guestName}}</small></h1>
+        </div>
+        <div class="flex-shrink-1 bd-highlight align-self-center pr-2">
+          <div class="haz_pct">
+            <div class="haz_circle">
+              <span>{{guestInitials}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- /End Guest header -------------->
+
+  <!-- Type selector -------------->
+  <div class="container px-3 mb-3 mt-3">
+    <ul class="nav nav-pills haz_tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Accommodation&nbsp;<span
+            class="badge badge-secondary">{{bookingCount}}</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Cancelations&nbsp;<span
+            class="badge badge-secondary">{{cancelledCount}}</span></a>
+      </li>
+    </ul>
+  </div>
+  <!-- /End Type selector -------------->
+
+
+  <!-- Grid Toolbar -------------->
+  <div class="haz_grid_toolbar container mb-3">
+    <div class="d-flex bd-highlight">
+      <div class="mr-auto p-1 bd-highlight">
+        <i class="fas fa-sort-amount-up"></i>
+        Sort
+        <div class="btn-group ml-2">
+          <button class="btn btn-secondary btn-sm haz_btn_1 dropdown-toggle" type="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Default
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">By date</a>
+            <a class="dropdown-item" href="#">By reference</a>
+          </div>
+        </div>
+      </div>
+      <div class="p-1 bd-highlight align-self-center ">
+        <i class="fas fa-chevron-left"></i>
+        <span>1-100</span>
+        <i class="fas fa-chevron-right"></i>
+      </div>
+    </div>
+  </div>
+  <!-- /End Grid Toolbar -------------->
+
+
+  <!-- Booking list (cards)- -------------->
+  <div class="haz_cards_list mb-3">
+    <div class="card haz_card">
+      <ul class="haz_card-list">
+        <!-- BK item loop -->
+        <li class="haz_card-list-item d-flex bd-highlight align-items-center haz_even" 
+        *ngFor="let booking of bookings;let index=index;let odd=odd; let even=even;" [ngClass]="odd ? 'haz_odd' : 'haz_even'">
+          <div class="p-2 bd-highlight justify-content-center">
+            <i class="fas fa-qrcode"></i>
+          </div>
+          <div class="haz_card-list-item-text bd-highlight flex-grow-1">
+            <h3><a href="#">{{booking.reference}}</a></h3>
+            <h4>{{booking.showDate}} - {{booking.lengthOfStay}} Nights</h4>
+            <p><span class="badge badge-secondary">{{booking.status}}</span></p>
+          </div>
+        </li>
+        <!-- /BK item loop -->
+        <!-- <li class="haz_card-list-item d-flex bd-highlight align-items-center haz_odd">
+          <div class="p-2 bd-highlight justify-content-center">
+            <i class="fas fa-qrcode"></i>
+          </div>
+          <div class="haz_card-list-item-text bd-highlight flex-grow-1">
+            <h3><a href="#">BOIKYOCA-2</a></h3>
+            <h4>Sun, July 10th 2020 - 7 Nights</h4>
+            <p><span class="badge badge-secondary">Pending</span></p>
+          </div>
+        </li>
+        <li class="haz_card-list-item d-flex bd-highlight align-items-center haz_even">
+          <div class="p-2 bd-highlight justify-content-center">
+            <i class="fas fa-qrcode"></i>
+          </div>
+          <div class="haz_card-list-item-text bd-highlight flex-grow-1">
+            <h3><a href="#">BREUUYOCA-1</a></h3>
+            <h4>Sun, Oct 10th 2020 - 2 Nights</h4>
+            <p><span class="badge badge-secondary">Confirmed</span></p>
+          </div>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+  <!-- /End Booking list (cards) -------------->
+
+
+
+
+
+</div>
+<!-- // /END COMMUNICATION LOG SCREEN // -------------------->

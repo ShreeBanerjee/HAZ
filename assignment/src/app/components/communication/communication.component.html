@@ -1,0 +1,99 @@
+<!-- // COMMUNICATION LOG SCREEN // -------------------->
+<div id="haz_scr02" class="haz_panel container">
+    <!-- Guest header -------------->        
+    <header class="haz_guest_header haz_guest_section d-flex mb-1">
+          <div class="container-fluid">
+                <div class="d-flex bd-highlight">  
+                    <div class="haz_back pr-3 flex-shrink-1 bd-highlight align-self-center" (click)="navigateTo('home')">                        
+                        <i class="haz_ui_link fas fa-chevron-left"></i>                     
+                    </div>
+                    <div class="w-100 bd-highlight haz_guest align-self-center">
+                         <h1>Communication log<small>Mr {{guestName}}</small></h1>
+                    </div> 
+                    <div class="flex-shrink-1 bd-highlight align-self-center pr-2">                        
+                        <div class="haz_pct">
+                            <div class="haz_circle">
+                                <span>{{guestInitials}}</span>  
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+          </div>  
+    </header>        
+    <!-- /End Guest header --------------> 
+    
+    
+    <!-- Grid Toolbar --------------> 
+    <div class="haz_grid_toolbar container mb-3">
+        <div class="d-flex bd-highlight">
+          <div class="mr-auto p-1 bd-highlight">
+                <i class="fas fa-sort-amount-up"></i>
+                Sort
+                <div class="btn-group ml-2">
+                  <button class="btn btn-secondary btn-sm haz_btn_1 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Default
+                  </button>
+                  <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">by name</a>
+                        <a class="dropdown-item" href="#">by date</a>
+                  </div>
+                </div>
+          </div>
+          <div class="p-1 bd-highlight align-self-center ">
+                <i class="fas fa-chevron-left"></i>
+                <span>1-100</span>
+                <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+    </div>  
+    <!-- /End Grid Toolbar --------------> 
+    
+    <!-- Grid results --------------> 
+    <div class="haz_grid container mb-5">
+        
+        <ul class="haz_timeline">
+            <li class="haz_tm_first" *ngFor="let log of logs;let index=index;">
+                <a target="_blank" href="#">Communication log title</a>
+                <br/><small>{{log.showDate}}</small>
+                <span><i class="fas fa-envelope"></i></span>
+            </li>
+            <!-- <li>
+                <a target="_blank" href="#">Communication log title</a>
+                <br/><small>Sun, 23 March 2020 - 10:38AM</small>
+                <span><i class="fas fa-envelope"></i></span>
+            </li>
+            <li>
+                <a target="_blank" href="#">Communication log title</a>
+                <br/><small>Sun, 23 March 2020 - 10:38AM</small>
+                <span><i class="fas fa-sms"></i></span>
+            </li>
+            <li>
+                <a target="_blank" href="#">Communication log title</a>
+                <br/><small>Sun, 23 March 2020 - 10:38AM</small>
+                <span><i class="fas fa-sms"></i></span>
+            </li>
+            <li>
+                <a target="_blank" href="#">Communication log title</a>
+                <br/><small>Sun, 23 March 2020 - 10:38AM</small>
+                <span><i class="fas fa-envelope"></i></span>
+            </li>
+            <li>
+                <a target="_blank" href="#">Communication log title</a>
+                <br/><small>Sun, 23 March 2020 - 10:38AM</small>
+                <span><i class="fas fa-envelope"></i></span>
+            </li>
+            <li class="haz_tm_last">
+                <a target="_blank" href="#">Communication log title</a>
+                <br/><small>Sun, 23 March 2020 - 10:38AM</small>
+                <span><i class="fas fa-envelope"></i></span>
+            </li> -->
+        </ul>
+        
+    </div>  
+    <!-- /End Grid results --------------> 
+    
+    
+    
+    
+</div>    
+<!-- // /END COMMUNICATION LOG SCREEN // -------------------->

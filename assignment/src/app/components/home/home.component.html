@@ -1,0 +1,90 @@
+ <!-- // SUMMARY/INTRO SCREEN // -------------------->
+    <div id="haz_scr01" class="haz_panel container" style="display: block; opacity: 1;">
+            <!-- Guest header -------------->        
+            <header class="haz_guest_header haz_bp_30 d-flex">
+                  <div class="container">
+                        <div class="d-flex bd-highlight">
+                            <div class="p-2 flex-shrink-1 bd-highlight">                        
+                                <div class="haz_pct">
+                                    <div class="haz_circle">
+                                        <span>{{customer?.initials}}</span>  
+                                    </div>
+                                </div>                        
+                            </div>
+                            <div class="p-2 w-100 bd-highlight haz_guest align-self-center">
+                                 <h1>Mr {{customer?.name}}<small>Company name</small></h1>
+                            </div>        
+                        </div>
+                  </div>  
+                </header>        
+            <!-- /End Guest header -------------->    
+
+
+            <!-- Guest TAGS -------------->    
+            <div class="haz_guest_tags haz_bp_30 container">
+                <div class="d-flex bd-highlight mb-3">
+                    <div class="p-1 bd-highlight haz_tag_item">
+                        <span>VIP</span>
+                    </div>
+                    <div class="p-1 bd-highlight haz_tag_item">
+                        <span>Leisure</span>
+                    </div>
+                </div>
+            </div>  
+            <!-- /End Guest TAGS -------------->     
+
+
+            <!-- Guest infos -------------->           
+            <div class="haz_guest_infos haz_bp_30 container">
+                <!-- Email + Socials -->
+                <div class="d-flex bd-highlight">
+                    <div class="p-1 flex-shrink-1 bd-highlight">
+                        <i class="fas fa-check-circle" style="font-size: 1em;"></i>
+                    </div>
+                    <div class="p-1 w-100 bd-highlight">{{customer?.email}}</div>            
+                    <div class="p-1 flex-shrink-1 bd-highlight">
+                        <i class="haz_ui_link fab fa-facebook-f"></i>
+                    </div>
+                </div>
+                <div class="d-flex haz_bt_line"></div>
+
+                <!-- Address -->
+                <div class="d-flex bd-highlight" *ngFor="let address of customer?.addresses;let index=index;">
+                    <div class="p-1 flex-shrink-1 bd-highlight">
+                        <i class="far fa-check-circle" style="font-size: 1em;"></i>
+                    </div>
+                    <div class="p-1 w-100 bd-highlight">{{address?.street}}, {{address?.city}}</div>            
+                    <div class="p-1 flex-shrink-1 bd-highlight">                
+                    </div>
+                </div>
+                <div class="d-flex haz_bt_line"></div>
+
+                <!-- Tel -->
+                <div class="d-flex bd-highlight">
+                    <div class="p-1 flex-shrink-1 bd-highlight" >
+                        <i class="far fa-check-circle" style="font-size: 1em;"></i>
+                    </div>
+                    <div class="p-1 w-100 bd-highlight">{{customer?.phone}}</div>            
+                    <div class="p-1 flex-shrink-1 bd-highlight">  
+                        <i class="haz_ui_link fas fa-mobile-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- /End Guest infos -------------->      
+
+
+            <!-- Guest Notes -------------->           
+            <div class="haz_guest_notes container">
+                <div class="d-flex p-2 bd-highlight">
+                    <p><b>LAST NOTE : </b><br><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisl tortor, sit amet vulputate risus ultricies id. Aenean consectetur, elit sed tincidunt iaculis.</i><br><br><small>2 days ago</small></p>                        
+                </div>
+            </div>
+            <!-- /End Guest Notes --------------> 
+        
+        
+            <div class="haz_ft_2 flex-grow-1" style="text-align:center">
+                <b>Last update :</b><br>PMS - 2020.03.24 - 10:24
+            </div>
+        
+    </div>    
+    <!-- // /END SUMMARY/INTRO SCREEN // -------------------->

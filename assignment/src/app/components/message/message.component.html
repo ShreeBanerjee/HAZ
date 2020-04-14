@@ -1,0 +1,121 @@
+<!-- // NEW MESSAGE SCREEN // -------------------->
+<div id="haz_scr03" class="haz_panel container p-0">
+    <!-- Guest header -------------->        
+    <header class="haz_guest_header haz_guest_section d-flex mb-1">
+          <div class="container-fluid">
+                <div class="d-flex bd-highlight">  
+                    <div class="haz_back pr-3 flex-shrink-1 bd-highlight align-self-center" (click)="navigateTo('home')">                        
+                        <i class="haz_ui_link fas fa-chevron-left"></i>                     
+                    </div>
+                    <div class="w-100 bd-highlight haz_guest align-self-center">
+                         <h1>New message<small>Mr John Doe</small></h1>
+                    </div> 
+                    <div class="flex-shrink-1 bd-highlight align-self-center pr-2">                        
+                        <div class="haz_pct">
+                            <div class="haz_circle">
+                                <span>JD</span>  
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+          </div>  
+    </header>         
+    <!-- /End Guest header --------------> 
+    
+    
+    <!-- Message Toolbar --------------> 
+    <div class="haz_grid_toolbar container mb-3">
+        <div class="d-flex bd-highlight">
+          <div class="mr-auto p-1 bd-highlight">
+                <i class="fas fa-folder-open"></i>
+                Select Template
+                <div class="btn-group ml-2">
+                  <button class="btn btn-secondary btn-sm haz_btn_1 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Name
+                  </button>
+                  <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Booking confirmation</a>
+                        <a class="dropdown-item" href="#">Cancelation</a>
+                  </div>
+                </div>
+          </div>
+        </div>
+    </div>  
+    <!-- /End Message Toolbar --------------> 
+    
+    
+    <!-- Message window --------------> 
+    <div class="haz_msg_wd container mb-3 p-3">
+
+        <!-- Recipient select -->
+        <div class="d-flex bd-highlight">  
+            <div class="p-1 flex-shrink-2 bd-highlight align-self-center">                        
+                <label>To:</label>                        
+            </div>
+            <div class="p-1 w-100 bd-highlight haz_guest align-self-center">
+                <div class="btn-group">
+                  <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select recipient
+                  </button>
+                  <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Guest : john.doe@gmail.com</a>
+                        <a class="dropdown-item" href="#">Booker : accounting@travel.com</a>
+                  </div>
+                </div>
+            </div>                             
+        </div>
+        
+        <!-- Cc input -->
+        <div class="d-flex bd-highlight">  
+            <div class="p-1 flex-shrink-2 bd-highlight align-self-center">                        
+                <label>Cc:</label>                        
+            </div>
+            <div class="p-1 w-100 bd-highlight align-self-center">
+                 <input type="text" value="johndoe@gmail.com" placeholder="Select email"/>
+            </div>                             
+        </div>
+        
+        <hr class="haz_hr"/>
+        
+        <!-- Custom message -->
+        <div class="d-flex bd-highlight">  
+            <div class="p-2 w-100 bd-highlight align-self-center">
+<textarea>Dear John,
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet ligula nec ligula varius rutrum. Nunc id volutpat lorem. Mauris in sapien eleifend.
+
+Best regards</textarea>
+            </div>                             
+        </div>
+        
+        <hr class="haz_hr"/>
+        
+        <!-- Message toolbox -->
+        <div class="haz_msg_tb d-flex bd-highlight">  
+            <div class="w-100 bd-highlight align-self-center">
+                <i class="fas fa-align-left"></i>
+                <i class="fas fa-align-center"></i>
+                <i class="fas fa-align-right"></i>
+            </div>                             
+        </div>
+        <!-- /end Message toolbox -->
+        
+        
+        <!-- Message toolbox -->
+        <div class="d-flex bd-highlight mt-3 mb-3">  
+            <div class="w-100 bd-highlight text-center">
+                <button type="button" class="btn btn-primary btn-lg haz_btn_green">Envoyer&nbsp;<i class="fas fa-paper-plane"></i></button>
+            </div>                             
+        </div>
+        <!-- /end Message toolbox -->
+
+    </div>  
+    <!-- /End Message window --------------> 
+    
+
+    
+    
+    
+    
+</div>    
+<!-- // /END COMMUNICATION LOG SCREEN // -------------------->

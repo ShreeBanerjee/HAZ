@@ -1,0 +1,11 @@
+<nav id="haz_main_nav" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"> 
+
+  <button class="ux_panel navbar-toggler" data-panel="haz_main_menu" type="button" (click)="navigateTo('summary')">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <form id="haz_spotlight" class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search guest" aria-label="Search">
+    <i class="ux_panel haz_ui_link fas fa-search" data-panel="haz_search_results" aria-hidden="true" (click)="navigateTo('search')"></i>
+  </form>    
+</nav>

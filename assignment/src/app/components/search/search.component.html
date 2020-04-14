@@ -1,0 +1,107 @@
+<!-- // SEARCH RESULTS// -------------------->     
+<div id="haz_search_results" class="haz_panel_overlay">
+    
+    <!-- Menu -------------->  
+    <div class="haz_guest_menu container-fluid p-0">
+        <div class="card haz_card">
+            <ul class="haz_card-list">
+              <!-- item loop -->   
+              <li *ngFor="let guest of guestList;let index=index; let odd=odd; let even=even;" class="haz_card-list-item d-flex bd-highlight align-items-center"
+              [ngClass]="odd ? 'haz_odd' : 'haz_even'">
+                  <div class="p-2 bd-highlight justify-content-center">                                        
+                    <div class="haz_pct">
+                        <div class="haz_circle">
+                            <span>{{guest?.initials}}</span>  
+                        </div>
+                    </div>                        
+                  </div>      
+                  <div class="haz_card-list-item-text bd-highlight flex-grow-1">
+                      <h4>{{guest?.name}}</h4>
+                  </div>
+              </li>
+              <!-- /item loop --> 
+              <!-- <li class="haz_card-list-item d-flex bd-highlight align-items-center haz_odd">
+                  <div class="p-2 bd-highlight justify-content-center">                                        
+                    <div class="haz_pct">
+                        <div class="haz_circle">
+                            <span>GN</span>  
+                        </div>
+                    </div>                        
+                  </div>      
+                  <div class="haz_card-list-item-text bd-highlight flex-grow-1">
+                      <h4>Guest name</h4>
+                  </div>
+              </li> 
+              <li class="haz_card-list-item d-flex bd-highlight align-items-center haz_even">
+                  <div class="p-2 bd-highlight justify-content-center">                                        
+                    <div class="haz_pct">
+                        <div class="haz_circle">
+                            <span>GN</span>  
+                        </div>
+                    </div>                        
+                  </div>      
+                  <div class="haz_card-list-item-text bd-highlight flex-grow-1">
+                      <h4>Guest name</h4>
+                  </div>
+              </li> 
+              <li class="haz_card-list-item d-flex bd-highlight align-items-center haz_odd">
+                  <div class="p-2 bd-highlight justify-content-center">                                        
+                    <div class="haz_pct">
+                        <div class="haz_circle">
+                            <span>GN</span>  
+                        </div>
+                    </div>                        
+                  </div>      
+                  <div class="haz_card-list-item-text bd-highlight flex-grow-1">
+                      <h4>Guest name</h4>
+                  </div>
+              </li> 
+              <li class="haz_card-list-item d-flex bd-highlight align-items-center haz_even">
+                  <div class="p-2 bd-highlight justify-content-center">                                        
+                    <div class="haz_pct">
+                        <div class="haz_circle">
+                            <span>GN</span>  
+                        </div>
+                    </div>                        
+                  </div>      
+                  <div class="haz_card-list-item-text bd-highlight flex-grow-1">
+                      <h4>Guest name</h4>
+                  </div>
+              </li> 
+              <li class="haz_card-list-item d-flex bd-highlight align-items-center haz_odd">
+                  <div class="p-2 bd-highlight justify-content-center">                                        
+                    <div class="haz_pct">
+                        <div class="haz_circle">
+                            <span>GN</span>  
+                        </div>
+                    </div>                        
+                  </div>      
+                  <div class="haz_card-list-item-text bd-highlight flex-grow-1">
+                      <h4>Guest name</h4>
+                  </div>
+              </li> 
+              <li class="haz_card-list-item d-flex bd-highlight align-items-center haz_even">
+                  <div class="p-2 bd-highlight justify-content-center">                                        
+                    <div class="haz_pct">
+                        <div class="haz_circle">
+                            <span>GN</span>  
+                        </div>
+                    </div>                        
+                  </div>      
+                  <div class="haz_card-list-item-text bd-highlight flex-grow-1">
+                      <h4>Guest name</h4>
+                  </div>
+              </li> -->     
+            </ul>
+        </div>
+    </div>    
+    <!-- /End Menu -------------->  
+    
+    <!-- Close -------------->  
+    <div class="haz_panel_close container-fluid p-3" (click)="navigateTo('home')">
+         <i class="haz_ui_link fas fa-times"></i>
+    </div>
+    <!-- /end Close -------------->  
+    
+</div>  
+<!-- // SEARCH RESULTS// -------------------->   
